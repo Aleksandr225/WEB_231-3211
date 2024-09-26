@@ -1,0 +1,135 @@
+h1.main-header {
+    margin: 10px 0 40px;
+}
+footer.foott {
+    background-color: black;
+    color: white;
+    
+}
+
+header {
+    margin: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer {
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+main {
+    margin: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+nav a {
+    font-size: 30px;
+    font-family: Arial bold;
+    color: #333; 
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.5; 
+}
+    
+nav a:first-child {
+    margin-left: 0; 
+}
+    
+nav a:hover {
+    color: orange; 
+}
+
+
+img {
+    margin: 10px auto 20px;
+    display: block;
+    width: 700px;
+    height: 500px;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial bold;
+    font-size: 30px;
+    color: black;
+    margin: 0 10px;
+}
+
+a.active {
+    color: tomato;
+}
+
+a.calllink {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+a:hover {
+    color: orange;
+}
+
+table.tab {
+    width: 70%;
+    padding: 10px;
+    border: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    border: 2px solid black;
+}
+table.tab th, td{
+    border: 2px solid black;
+}
+
+table.tab td{
+    height: 50%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10;
+    color: black;
+
+}
+
+footer > p{
+    color: white;
+}
+
+@media (max-width: 800px) {
+    section>img{
+        width: 500px;
+
+    }
+    
+
+}
+
+
+@media (max-width: 800px) {
+    section>img{
+        width: 100%;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    td {
+        font-size: 8px;
+    }
+    
+
+}
+
+@media (max-width:400px){
+    td{
+        font-size: 6px;
+    }
+}

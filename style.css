@@ -1,0 +1,143 @@
+
+header {
+    background-color: white;
+    color: #333;
+    padding: 10px 20px; /* Уменьшаем отступы для заголовка */
+    text-align: left;
+}
+
+section>div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+
+section > div > div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: white;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+    
+section > div > div:hover {
+    border: 2px solid tomato;
+}
+    
+section > div > div:hover button {
+    background-color: tomato;
+}
+
+section >div > div> img{
+    width: 100%;
+    border-radius: 35px;
+}
+
+section>div>div>p{
+    size: 20px;
+}
+
+section>div>div>p.gram{
+    color: grey;
+
+}
+
+section>div>div>button {
+    background-color: #f1eee9;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+
+
+}
+
+    
+nav>a {
+    font-size: 30px;
+    font-family: Arial bold;
+    color: #333; 
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.5; 
+}
+    
+nav a:first-child {
+    margin-left: 0; 
+}
+    
+nav a:hover {
+    color: orange; 
+}
+
+a.active {
+    color: tomato;
+}
+    
+   
+
+@media (max-width: 800px) {
+    section>div{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    
+
+}
+
+@media (max-width:600px) {
+    section>h2{
+        text-align: center;
+            
+    }
+
+    section>div{
+        grid-template-columns: 1fr;
+
+    }
+        
+}
+
+
+
+main {
+    margin:20px;
+}
+
+
+
+footer {
+    background-color: black;
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer>p{
+    color: white;
+}
+
+footer>a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+a.calllink {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+    color: white;
+}
+
+a.calllink:hover {
+    color: orange;
+}
