@@ -7,6 +7,11 @@ footer.foott {
     
 }
 
+nav.main-nav {
+    display: flex;
+    justify-content: space-around;
+    }
+
 header {
     margin: 0px;
     padding: 20px;
@@ -112,13 +117,17 @@ footer > p{
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     section>img{
         width: 100%;
     }
 
-    h1{
+    h1.main-header {
         text-align: center;
+    }
+
+    nav>a {
+        font-size: 34px;
     }
 
     td {
@@ -132,4 +141,33 @@ footer > p{
     td{
         font-size: 6px;
     }
+}
+
+@media (max-width:300px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        }
+        
+        
+    nav>a {
+        font-size: 20px;
+        font-family: Arial bold;
+        color: #333; 
+        text-decoration: none;
+        font-weight: bold;
+        line-height: 1.5; 
+    }
+
+    section>img{
+        width: 100%;
+    }
+
+    table{
+        width: 90%;
+    }
+    td {
+        font-size: 15px;
+    }
+    
 }
