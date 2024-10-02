@@ -1,8 +1,7 @@
-
 header {
     background-color: white;
     color: #333;
-    padding: 10px 20px; /* Уменьшаем отступы для заголовка */
+    padding: 10px 20px; 
     text-align: left;
 }
 
@@ -47,7 +46,8 @@ section>div>div>p.gram{
 }
 
 section>div>div>button {
-    background-color: #f1eee9;
+    background-color: white;
+    border: 0.5px white;
     margin-top: 10px;
     border-radius: 10px;
     padding: 10px 30px;
@@ -55,6 +55,11 @@ section>div>div>button {
 
 
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    }
 
     
 nav>a {
@@ -90,7 +95,7 @@ a.active {
 
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     section>h2{
         text-align: center;
             
@@ -103,6 +108,38 @@ a.active {
         
 }
 
+@media (max-width: 250px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        }
+        
+        
+    nav>a {
+        font-size: 20px;
+        font-family: Arial bold;
+        color: #333; 
+        text-decoration: none;
+        font-weight: bold;
+        line-height: 1.5; 
+    }
+
+    div.order {
+        margin-top: 30px;
+        width: 40%;
+        
+    }
+
+    div.data {
+        margin-top: 30px;
+    
+        width: 40%;
+        
+    }
+
+
+    
+}
 
 
 main {
@@ -140,4 +177,110 @@ a.calllink {
 
 a.calllink:hover {
     color: orange;
+}
+
+
+
+
+div.order {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+div.order>select {
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+div.order>textarea {
+    height: 80px;
+    margin-top: px;
+}
+
+
+div.data {
+    
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+div.data>input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+div>label.check-label {
+    margin-bottom: 20px;
+}
+
+div>label{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button.but1{
+    margin-top: 3px;
+    background-color: white;
+    border: 2px solid black;
+    flex-direction: row;
+    float: left;
+    width: 48%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+button.but2{
+    margin-top: 3px;
+    background-color: white;
+    border: 2px solid black;
+    flex-direction: row;
+    float: right;
+    width: 48%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+div>div>button:hover{
+    background-color: tomato;
+    width: 50%;
+    height: 35px;
+
+}
+
+
+
+form.bottom {
+    padding: 20px;
+    overflow: hidden;
+    margin: 30px;
+}
+
+form>h2 {
+    text-align: center;
+}
+
+
+form>div>h3 {
+    text-align: center;
+}
+
+
+div>p {
+    color: gray;
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+.buttons{
+    height: 40px;
+    padding: 2px;
+    margin-bottom: 2px;
 }
