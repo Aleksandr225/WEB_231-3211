@@ -126,8 +126,91 @@
                 </div>
             </div>
         </section>
+
+        
         
     </main>
+
+    <form  action="https://httpbin.org/post" method="post" class="bottom">
+        <h2>Сделать заказ</h2>
+        <div class="order">
+            <h3>Ваш заказ</h3>
+
+            <label for="soup">Суп</label>
+            <select name="soup" id="soup" required>
+                <option value="choice">--Выберите суп--</option>
+                <option value="gaspacho">Гаспачо</option>
+                <option value="mushroom-soup">Суп-пюре с грибами</option>
+                <option value="norway-soup">Норвежский суп</option>
+            </select>
+
+            <label for="main-dish">Главное блюдо</label>
+            <select name="dish" id="main-dish" required>
+                <option value="choice">--Выберите главное блюдо--</option>
+                <option value="potato">Жаренная картошка с грибами</option>
+                <option value="lasagna">Лазанья</option>
+                <option value="meatballs">Котлеты из курицы с картофельным пюре</option>     
+            </select>
+
+            <label for="drinks">Напиток</label>
+            <select name="drink" id="drinks" required>
+                <option value="choice">--Выберите главное блюдо--</option>
+                <option value="orange">Апельсиновй сок</option>
+                <option value="apple">Яблочный сок</option>
+                <option value="carrot">Морковный сок</option>     
+            </select>
+
+            <label for="rew">Комментарий</label>
+            <textarea name="review" id="rew" required></textarea>
+
+
+        </div>
+
+        <div class="data">
+            <h3>Ваши данные</h3>
+            <label for="name">Имя</label>
+            <input name="name" type="text" required>
+
+            <label for="mail">E-mail</label>
+            <input name="email" type="mail"required>
+
+            <label class="check-label"> <input name="check" type="checkbox"> 
+                Получать информацию 
+                о скидках и акциях</label>
+            
+            <label for="num">Номер телефона</label>
+            <input name="tele" type="tel" required>
+
+            
+            <label for="location">Адрес доставки</label>
+            <input name="location" type="text" required>
+            <p class="note">Доставка осуществляется только по Москве</p>
+
+            <label>Время доставки</label>
+            <label><input name="asap" type="radio" required>
+                Как можно скорее</label>
+
+            <label><input name="up-to-time" type="radio" required>
+                К назначенному времени</label>
+
+            <label for="time">Укажите время доставки</label>
+            <input name="tim" type="time" min="07:00" max="23:00" step="300" required>
+            <p class="note">Доступное время доставки с 7:00 до 23:00</p>
+            
+
+            <div class="buttons">
+                <button class="but1" type="reset">
+                    <span>Сбросить</span>
+                </button>
+
+                <button class="but2" type="submit">
+                    <span>Отправить</span>
+                </button>
+            </div>
+
+        </div>
+
+    </form>
     
 
     <footer id="foot">
