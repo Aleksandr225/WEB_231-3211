@@ -253,7 +253,7 @@ button.but2{
     border-radius: 10px;
 }
 
-div>div>button:hover{
+form>div>div>button:hover{
     background-color: tomato;
     width: 50%;
     height: 35px;
