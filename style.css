@@ -86,11 +86,33 @@ a.active {
     
    
 
+@media (max-width: 1500px){
+
+    div.order {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        
+    }
+
+    div.data {
+    
+        float: right;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        
+    }
+}
+
 @media (max-width: 800px) {
     section>div{
         grid-template-columns: repeat(2, 1fr);
 
     }
+
+    
     
 
 }
@@ -105,10 +127,12 @@ a.active {
         grid-template-columns: 1fr;
 
     }
-        
+
+      
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+
     nav {
         display: flex;
         flex-direction: column;
@@ -141,6 +165,8 @@ a.active {
         width: 90%;
         
     }
+
+    
 
 
     
@@ -187,13 +213,7 @@ a.calllink:hover {
 
 
 
-div.order {
-    float: left;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    
-}
+
 
 div.order>select {
     height: 30px;
@@ -207,14 +227,7 @@ div.order>textarea {
 }
 
 
-div.data {
-    
-    float: right;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    
-}
+
 
 div.data>input{
     margin-top: 5px;
