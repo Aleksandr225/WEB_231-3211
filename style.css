@@ -1,3 +1,4 @@
+
 header {
     background-color: white;
     color: #333;
@@ -5,7 +6,7 @@ header {
     text-align: left;
 }
 
-section>div{
+div.dishes{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -13,7 +14,7 @@ section>div{
 
 
 
-section > div > div {
+section > div > div.dish {
     display: flex;
     flex-direction: column;
     padding: 30px 40px;
@@ -22,6 +23,8 @@ section > div > div {
     background-color: white;
     filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
 }
+
+
     
 section > div > div:hover {
     border: 2px solid tomato;
@@ -45,7 +48,8 @@ section>div>div>p.gram{
 
 }
 
-section>div>div>button {
+button.add {
+    width: 100%;
     background-color: white;
     border: 0.5px white;
     margin-top: 10px;
@@ -165,13 +169,12 @@ a.active {
         width: 90%;
         
     }
+    
     nav.main-nav {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    
 
 
     
@@ -232,7 +235,16 @@ div.order>textarea {
 }
 
 
+section>h2 {
+    font-size: 40px;
+}
 
+
+
+section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
 div.data>input{
     margin-top: 5px;
@@ -309,3 +321,62 @@ form>div>p {
 }
 
 
+.order-item p {
+    margin: 0; 
+    line-height: 1.2; 
+    font-size: 20px;
+}
+
+.order-item p + p {
+    margin-bottom: 20px; 
+    width: 300px;
+}
+
+
+
+
+#no-selection-message {
+    display: none; 
+}
+
+
+#no-selection-message {
+    display: block; 
+    margin-bottom: 20px;
+}
+
+#soup-order, #main-order, #drink-order, #total-price-block {
+    display: none; 
+}
+
+form > div> div > p {
+    font-size: 30px;
+    font-family:'Arial Narrow Bold'
+}
+
+.price-value {
+    font-size: 30px;
+}
+
+
+.filters > button{
+    margin:0 10px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    
+}
+
+.filters > button:hover{
+    background-color: tomato;
+}
+
+
+.filters > button:active{
+    background-color: tomato;
+}
+
+.filters{
+    margin-bottom: 20px;
+    width: 40%;
+}
