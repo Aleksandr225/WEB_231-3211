@@ -8,6 +8,7 @@
     <title>Food Construct</title>
 </head>
 <body>
+    
     <header>
         <h1>Food Construct</h1>
         <nav>
@@ -20,111 +21,60 @@
 
 
     <main>
-        <section class="section1">
+        <section id="soups" class="section1">
             <h2>Выберите суп</h2>
-            <div>
-                <div>
-                    <img alt="Гаспачо" src="gaspach.jpg">
-                    <p>195₽</p>
-                    <p>Гаспачо</p>
-                    <p class="gram">350г</p>
-                    <button>
-                        <span>Добавить</span>
-                    </button>
-
-                </div>
-
-                <div>
-                    <img alt="Грибной суп-пюре" src="mashroom.jpg">
-                    <p>185₽</p>
-                    <p>Грибной суп-пюре</p>
-                    <p class="gram">330 г</p>
-                    <button>
-                        <span>Добавить</span>
-                    </button>
-                </div>
-
-                <div>
-                    <img alt="Норвежский суп" src="norway_soup.jpg">
-                    <p>270₽</p>
-                    <p>Норвежский суп</p>
-                    <p class="gram">330 г</p>
-                    <button>
-                        <span>Добавить</span>
-                    </button>
-                </div>
+            <div class="filters">
+                <button data-kind="meat">Мясо</button>
+                <button data-kind="fish">Рыба</button>
+                <button data-kind="veg">Веган</button>
             </div>
+            <div class="dishes"></div>
         </section>
 
-        <section class="section2">
+        <section id="starts" class="section2">
+            <h2>Выберите салат или стартер</h2>
+            <div class="filters">
+                <button data-kind="meat" data-category="meat">Мясо</button>
+                <button data-kind="fish">Рыба</button>
+                <button data-kind="veg">Веган</button>
+            </div>
+            
+            <div class="dishes"></div>
+        </section>
+            
+        <section id="mains" class="section3">
             <h2>Выберите главное блюдо</h2>
-            <div>
-                <div>
-                    <img alt="Жаренная картошка с грибами" src="potato.jpg">
-                    <p>150₽</p>
-                    <p>Жаренная картошка с грибами</p>
-                    <p class="gram">250 г</p>
-                    <button>
-                        <span>Добавить</span>
-                    </button>
-
-                </div>
-
-                <div>
-                    <img alt="Лазанья" src="lasagna.jpg">
-                    <p>385₽</p>
-                    <p>Лазанья</p>
-                    <p class="gram">310 г</p>
-                    <button>
-                        <span>Добавить</span>
-                    </button>
-                </div>
-
-                <div>
-                    <img alt="Котлеты из курицы с картофельным пюре" src="pot_chiken.jpg">
-                    <p>225₽</p>
-                    <p>Котлеты из курицы с картофельным пюре</p>
-                    <p class="gram">280 г</p>
-                    <button>
-                        <span>Добавить</span>
-                    </button>
-                </div>
+            <div class="filters">
+                <button data-kind="meat">Мясо</button>
+                <button data-kind="fish">Рыба</button>
+                <button data-kind="veg">Веган</button>
+            </div>
+            <div class="dishes">
+                
             </div>
         </section>
 
-        <section class="section3">
+        <section id="deserts" class="section4">
+            <h2>Выберите десерт</h2>
+            <div class="filters">
+                <button data-kind="large">Большие</button>
+                <button data-kind="medium">Средние</button>
+                <button data-kind="small">Маленькие</button>
+            </div>
+            <div class="dishes">
+                
+            </div>
+        </section>
+
+        <section id="drinks" class="section5">
             <h2>Выберите напиток</h2>
-            <div>
-                <div>
-                    <img alt="Апельсиновй сок" src="orange.jpg">
-                    <p>120₽</p>
-                    <p>Апельсиновй сок</p>
-                    <p class="gram">300 мл</p>
-                    <button>
-                        <span>Добавить</span>
-                    </button>
-
-                </div>
-
-                <div>
-                    <img alt="Яблочный суп" src="apple.jpg">
-                    <p>90₽</p>
-                    <p>Яблочный сок</p>
-                    <p class="gram">300 мл</p>
-                    <button>
-                        <span>Добавить</span>
-                    </button>
-                </div>
-
-                <div>
-                    <img alt="Морковный суп" src="carrot.jpg">
-                    <p>110₽</p>
-                    <p>Морковный сок</p>
-                    <p class="gram">300 мл</p>
-                    <button>
-                        <span>Добавить</span>
-                    </button>
-                </div>
+            <div class="filters">
+                <button data-kind="hot">Горячие</button>
+                <button data-kind="cold">Холодные</button>
+               
+            </div>
+            <div class="dishes">
+                
             </div>
         </section>
 
@@ -132,34 +82,37 @@
         
     </main>
 
-    <form  action="https://api.telegram.org/bot8170859119:AAGwy-30VtluY-sXEewCor3HFqY_NYs77y0/sendMessage" method="post" class="bottom">
+    <form  action="https://httpbin.org/post" method="post" class="bottom">
         <h2>Сделать заказ</h2>
         <div class="order">
             <h3>Ваш заказ</h3>
 
-            <label for="soup">Суп</label>
-            <select name="soup" id="soup" required>
-                <option value="choice">--Выберите суп--</option>
-                <option value="gaspacho">Гаспачо</option>
-                <option value="mushroom-soup">Суп-пюре с грибами</option>
-                <option value="norway-soup">Норвежский суп</option>
-            </select>
-
-            <label for="main-dish">Главное блюдо</label>
-            <select name="dish" id="main-dish" required>
-                <option value="choice">--Выберите главное блюдо--</option>
-                <option value="potato">Жаренная картошка с грибами</option>
-                <option value="lasagna">Лазанья</option>
-                <option value="meatballs">Котлеты из курицы с картофельным пюре</option>     
-            </select>
-
-            <label for="drinks">Напиток</label>
-            <select name="drink" id="drinks" required>
-                <option value="choice">--Выберите главное блюдо--</option>
-                <option value="orange">Апельсиновй сок</option>
-                <option value="apple">Яблочный сок</option>
-                <option value="carrot">Морковный сок</option>     
-            </select>
+            <div id="no-selection-message" class="order-item">
+                <p>Ничего не выбрано</p>
+            </div>
+            <div class="order-item" id="soup-order" style="display: none;">
+                <p><strong>Суп</strong></p>
+                <p id="selected-soup">Не выбран</p>
+            </div>
+            <div class="order-item" id="start-order" style="display: none;">
+                <p><strong>Стартер</strong></p>
+                <p id="selected-start">Не выбран</p>
+            </div>
+            <div class="order-item" id="main-order" style="display: none;">
+                <p><strong>Главное блюдо</strong></p>
+                <p id="selected-main-dish">Не выбрано</p>
+            </div>
+            <div class="order-item" id="desert-order" style="display: none;">
+                <p><strong>Десерт</strong></p>
+                <p id="selected-desert">Не выбрано</p>
+            </div>
+            <div class="order-item" id="drink-order" style="display: none;">
+                <p><strong>Напиток</strong></p>
+                <p id="selected-drink">Не выбран</p>
+            </div>
+            <div class="order-item" id="total-price-block" style="display: none;">
+                <p id="total-price">Стоимость заказа: <span class="price-value">0₽</span></p>
+            </div>              
 
             <label for="rew">Комментарий</label>
             <textarea name="review" id="rew" required></textarea>
@@ -188,10 +141,10 @@
             <p class="note">Доставка осуществляется только по Москве</p>
 
             <label>Время доставки</label>
-            <label><input name="asap" type="radio" required>
+            <label><input name="but" type="radio" required>
                 Как можно скорее</label>
 
-            <label><input name="up-to-time" type="radio" required>
+            <label><input name="but" type="radio" required>
                 К назначенному времени</label>
 
             <label for="time">Укажите время доставки</label>
@@ -219,6 +172,7 @@
         <p>Позвонить нам <a class="calllink" href="#">+7-000-000-00-00</a></p>
     </footer>
 
-    
+    <script src="dishes.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
