@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <header>
+        <div class="main-nav-div">
+            <div class="logo">
+                <img src="images/LetterAa.svg" alt="">
+                <h1>Shop</h1>
+            </div>
+
+            <nav>
+                <a href="index.html">
+                    <img src="images/UnorderedListOutlined.svg" alt="LT" >
+                </a>
+                <a href="orders.html">
+                    <img src="images/PersonCircle.svg" alt="PP">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="chosen_food">
+            <h2>Корзина</h2>
+            <div class="dishes_order">
+                <p class="nothing_selected">Ничего не выбрано. Чтобы добавить товар в корзину, перейдите по кнопке</p>
+                <a class="link" href="index.html">Каталог
+                </a>
+            </div>
+        </section>
+        
+        <section class="two-forms">
+            <div id="notification" class="notification hidden">
+                <p id="notification-text"></p>
+                <button id="notification-button">Окей</button>
+            </div>
+            <h2 id="form">Оформить заказ</h2>
+            <form>
+                <fieldset class="user">
+                    
+
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" placeholder="Иван Иванов">
+
+                    <label for="phone" id="label_phone">Номер телефона</label>
+                    <input type="tel" id="phone" placeholder="+7-000-000-00-00" required>
+
+                    
+                    
+
+                    <label for="email" id="label_email">Email</label>
+                    <input type="text" id="email" placeholder="ivanov1990@mail.ru" required>
+                    <div>
+                        <input type="checkbox" id="subscribe" checked>
+                        <label for="subscribe" id="subscribe_yes">Подписаться на рассылку</label>
+                        
+                    </div>
+                    
+
+                    <label class='label_comment' for="comment">Комментарий</label>
+                    <textarea id="comment" rows="6" cols="34"></textarea>
+                </fieldset>
+                    
+
+                <fieldset class="dest">
+                    <label for="address">Адрес доставки</label>
+                    <input type="text" id="address" placeholder="ул.Прянишникова, 2А, кв.0" required>
+                    
+
+
+                    <label for="date">Дата доставки</label>
+                    <input type="date" id="date" placeholder="00.00.0000" required class="data">
+
+
+                    <label for="time_choice" id="label_choice">Указать время доставки</label>
+                    <input type="time" id="time_choice" min="07:00" max="23:00">
+
+                    
+
+                    <div>
+                        <button type="reset" id="reset">Сбросить</button>
+                        <button type="submit" id="submit">Отправить</button>
+                    
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>A&A Shop 2025</p>
+    </footer>
+    <script src="scripts/products.js"></script>
+</body>
+</html>
